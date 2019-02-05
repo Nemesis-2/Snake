@@ -20,11 +20,9 @@ namespace Snake
             Upline.Drow();
             Downline.Drow();
 
-            Point q1 = new Point(1, 3, '*');
-            q1.Draw();
-
-            Point q2 = new Point(4, 5, '#');
-            q2.Draw();
+            Point q = new Point(4, 5, '*');
+            Snake snake = new Snake(q, 4, Direction.RIGHT);
+            snake.Drow();
 
             Console.ReadLine();
         }
